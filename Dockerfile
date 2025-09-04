@@ -5,7 +5,7 @@ RUN apt-get update && \
       git wget ca-certificates git build-essential libssl-dev zlib1g-dev \
       libbz2-dev libreadline-dev libsqlite3-dev libffi-dev libxml2-dev \
       libxslt1-dev libre2-dev pkg-config && \
-    pip3 install --no-binary lxml --upgrade git+https://github.com/ngie-eign/grab-site && \
+    pip3 install --no-binary lxml --upgrade git+https://github.com/ngie-eign/grab-site@py313-support && \
     apt-get purge -y \
 			git build-essential pkg-config && \
     apt-get autoremove -y && apt-get clean && \
